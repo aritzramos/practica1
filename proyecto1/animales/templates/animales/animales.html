@@ -9,9 +9,11 @@
     {% for animal in animales_mostrar %}
         <article>
             <p>Cuidador: {{ animal.cuidador }}</p>
-            <p>{{ animal.nombre }}</p>
-            <p>{{ animal.tipo }}</p>
+            <p>Nombre animal: {{ animal.nombre }}</p>
+            <p>Animal: {{ animal.tipo }}</p>
         </article>
     {% endfor %}
+
+    <a href="{% url 'main' %}">Volver</a>
 </body>
 </html>

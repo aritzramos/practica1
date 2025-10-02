@@ -8,10 +8,11 @@
 <body>
     {% for protectora in protectora_mostrar %}
         <article>
-            <p>Nombre:: {{ protectora.nombre }}</p>
-            <p>{{ protectora.descripcion }}</p>
-            <p>{{ protectora.fecha_creacion }}</p>
+            <p>Nombre: {{ protectora.nombre }}</p>
+            <p>Descipcion: {{ protectora.descripcion }}</p>
+            <p>Fecha creacion: {{ protectora.fecha_creacion }}</p>
         </article>
     {% endfor %}
+    <a href="{% url 'main' %}">Volver</a>
 </body>
 </html>
