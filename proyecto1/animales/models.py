@@ -10,7 +10,7 @@ class Animales(models.Model):
     tipo = models.CharField(max_length=20)
     
     def __str__(self):
-        return "Cuidador: " + str(self.cuidador) + " Nombre: " + self.nombre + " Tipo: " + self.tipo
+        return self.tipo
 
 class Protectora(models.Model):
     nombre = models.CharField(max_length=60)
@@ -18,7 +18,7 @@ class Protectora(models.Model):
     fecha_creacion = models.DateTimeField(default=timezone.now)
     
     def __str__(self):
-        return "Nombre: " + self.nombre + " Descripción: " + self.descripcion + " Fecha: " + str(self.fecha_creacion)
+        return self.nombre
     
 class Colaborador(models.Model):
     nombre = models.CharField(max_length=60)
@@ -26,4 +26,4 @@ class Colaborador(models.Model):
     fecha_entrada_protectora = models.DateTimeField()
     
     def __str__(self):
-        return "Nombre: " + self.nombre + " Cargo: " + self.cargo + " Fecha de entrada: " + str(self.fecha_entrada_protectora)
+        return self.nombre
