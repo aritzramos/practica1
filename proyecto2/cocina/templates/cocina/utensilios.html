@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredientes</title>
+</head>
+<body>
+    <h1>Ingredientes</h1>
+    <hr>
+    {% for utensilio in mostrar_utensilios %}
+    <article>
+        <ul>
+        <li><p>Nombre: {{ utensilio.name }}</p></li>
+            <ul>
+                <li><p>Componente: {{ utensilio.component }}</p></li>
+            </ul>
+        </ul>
+    </article>
+    {% endfor %}
+
+    <a href="{% url 'main' %}">Volver</a>
+</body>
+</html>

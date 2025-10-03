@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+</head>
+<body>
+    <h1>Recetas</h1>
+    <hr>
+    {% for receta in mostrar_recetas %}
+    <article>
+        <ul>
+        <li><p>Autor: {{ receta.author }}</p></li>
+        <li><p>Titulo: {{ recete.title }}</p></li>
+        <li><p>Descripcion: {{ receta.text }}</p></li>
+        <li><p>Fecha de creacion: {{ receta.created }}</p></li>
+        </ul>
+    </article>
+    {% endfor %}
+
+    <a href="{% url 'main' %}">Volver</a>
+</body>
+</html>

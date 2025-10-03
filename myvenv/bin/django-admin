@@ -1,4 +1,4 @@
-#!/home/alumnado/EntornoServidor/practica1/proyecto1/myvenv/bin/python3
+#!/home/alumnado/EntornoServidor/practica1/myvenv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
